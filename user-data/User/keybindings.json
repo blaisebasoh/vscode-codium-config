@@ -1,0 +1,47 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "shift+alt+z",
+    "command": "workbench.action.toggleStatusbarVisibility",
+  },
+  {
+    "key": "shift+s",
+    "command": "periscope.search",
+  },
+  {
+    "key": "shift+alt+s b",
+    "command": "periscope.searchBuffers",
+  },
+  {
+    "key": "ctrl+alt+s f",
+    "command": "periscope.searchFiles",
+  },
+  {
+    "key": "ctrl+shift+=",
+    "command": "-workbench.action.zoomIn",
+  },
+  {
+    "key": "ctrl+=",
+    "command": "-workbench.action.zoomIn",
+  },
+  {
+    "key": "ctrl+numpad_subtract",
+    "command": "-workbench.action.zoomOut",
+  },
+  {
+    "key": "ctrl+-",
+    "command": "-workbench.action.zoomOut",
+  },
+  {
+    "key": "ctrl+shift+-",
+    "command": "-workbench.action.zoomOut",
+  },
+  {
+    "key": "ctrl+numpad_add",
+    "command": "-workbench.action.zoomIn",
+  },
+  {
+    "key": "ctrl+numpad0",
+    "command": "-workbench.action.zoomReset",
+  },
+]
