@@ -5,18 +5,6 @@
     "command": "workbench.action.toggleStatusbarVisibility",
   },
   {
-    "key": "shift+s",
-    "command": "periscope.search",
-  },
-  {
-    "key": "shift+alt+s b",
-    "command": "periscope.searchBuffers",
-  },
-  {
-    "key": "ctrl+alt+s f",
-    "command": "periscope.searchFiles",
-  },
-  {
     "key": "ctrl+shift+=",
     "command": "-workbench.action.zoomIn",
   },

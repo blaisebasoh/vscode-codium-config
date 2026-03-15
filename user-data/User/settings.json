@@ -18,14 +18,20 @@
   "diffEditor.ignoreTrimWhitespace": false,
 
   // Theme / Visual Settings
-  "editor.fontFamily": "'JetBrains Mono Nerd Font'",
+  "editor.fontFamily": "FiraCode Nerd Font Propo",
+  // "editor.fontFamily": "JetBrainsMono Nerd Font",
 
   "workbench.colorCustomizations": {
-    // "editor.background": "#0A0A0A",
-    "editor.selectionBackground": "#FFFFFF30",
+    "editor.background": "#0c0c0c",
+    "sideBar.background": "#0c0c0c",
+    "titleBar.activeBackground": "#0c0c0c",
+    "welcomePage.background": "#0c0c0c",
+    "terminal.background": "#0c0c0c",
+    "statusBar.background": "#0c0c0c",
+    "editor.selectionBackground": "#5e5e5e30",
   },
-  "workbench.iconTheme": "file-icons",
-  "workbench.activityBar.location": "top",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.activityBar.location": "hidden",
   "workbench.tree.indent": 12,
   "workbench.startupEditor": "none",
   "workbench.secondarySideBar.defaultVisibility": "hidden",
@@ -34,7 +40,7 @@
   "window.customTitleBarVisibility": "auto",
 
   // Explorer & File Management Behavior
-  "explorer.compactFolders": false,
+  "explorer.compactFolders": true,
   "explorer.autoReveal": "focusNoScroll",
   "files.exclude": {
     "**/.manta_": true,
@@ -131,13 +137,66 @@
     "terminal.integrated.mouseWheelScrollSensitivity",
     "C_Cpp.intelliSenseEngine",
   ],
-  "workbench.sideBar.location": "right",
+
+  // vim settings
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"],
+    },
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "d"],
+      "after": ["d", "d"],
+    },
+    {
+      "before": ["<C-n>"],
+      "commands": [":nohl"],
+    },
+    {
+      "before": ["K"],
+      "commands": ["lineBreakInsert"],
+      "silent": true,
+    },
+  ],
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["<C-n>"],
+      "commands": [":nohl"],
+    },
+    {
+      "before": ["leader", "w"],
+      "commands": ["workbench.action.files.save"],
+    },
+    {
+      "before": [":"],
+      "commands": ["workbench.action.showCommands"],
+      "silent": true,
+    },
+  ],
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false,
+  },
+  // To improve performance
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1,
+  },
+
+  //
   "editor.scrollbar.horizontal": "hidden",
   "editor.scrollbar.vertical": "hidden",
   "window.restoreWindows": "none",
   "workbench.layoutControl.enabled": false,
   "workbench.editor.titleScrollbarVisibility": "hidden",
-  "window.title": "${dirty}${activeEditorShort}${separator}${appName}",
+  "window.title": "${activeEditorShort}",
   "window.titleSeparator": " . ",
   "zenMode.showTabs": "single",
   "window.density.editorTabHeight": "compact",
@@ -174,4 +233,30 @@
   "markdown.preview.fontSize": 12,
   "simpleCodingTimeTracker.statusBar.backgroundStyle": "default",
   "simpleCodingTimeTracker.enableDevCommands": false,
+  "window.commandCenter": false,
+  "window.menuBarVisibility": "compact",
+  "workbench.editor.showTabs": "none",
+  "workbench.tips.enabled": false,
+  "breadcrumbs.enabled": false,
+  "workbench.sideBar.location": "right",
+  "explorer.decorations.badges": false,
+  "explorer.decorations.colors": false,
+  "workbench.tree.enableStickyScroll": false,
+  "workbench.tree.renderIndentGuides": "none",
+  "material-icon-theme.hidesExplorerArrows": true,
+  "explorer.confirmDragAndDrop": false,
+  "editor.cursorBlinking": "solid",
+  "editor.fontLigatures": true,
+  "editor.lineHeight": 1.5,
+  "editor.matchBrackets": "never",
+  "files.insertFinalNewline": true,
+  "scm.diffDecorations": "none",
+  "editor.lineNumbers": "relative",
+  "editor.detectIndentation": false,
+  "editor.showFoldingControls": "never",
+  "editor.guides.indentation": false,
+  "editor.foldingHighlight": false,
+  "workbench.editorAssociations": {
+    "*.md": "vscode.markdown.preview.editor",
+  },
 }
